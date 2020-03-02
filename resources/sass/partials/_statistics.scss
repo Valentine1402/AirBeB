@@ -1,0 +1,42 @@
+.florida{
+  background-image: url(../img/florida.jpg/);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+.sponsor-title{
+    background-color: $lightGrey;
+    color: $bBcolor;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+.graphic{
+    display: flex;
+    justify-content: center;
+                
+                @media screen and (max-width: 999px) {
+                    flex-direction: column;
+                    margin: 20px;
+                }
+
+                @media screen and (max-width: 599px) {
+                    flex-direction: column;
+                    margin: 20px;
+                }
+    h2{
+        color:$bBcolor ;
+        background-color: $blueDark;
+        text-align: center;
+        padding: 10px;
+        margin: 30px 10px 30px 50px;
+        border-radius: 5px;
+        
+    }
+     canvas{
+       width: 600px; 
+       margin-bottom: 30px;
+    }  
+}

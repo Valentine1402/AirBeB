@@ -1,0 +1,90 @@
+.form-container {
+  width: 100%;
+  height: calc(100vh - 70px);
+  background-color: $blueDark;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-height: 666px) {
+      height: auto;
+  }
+  &.modal{
+    background-color: transparent;
+  }
+  .user-form {
+    background-color: $white;
+    padding: 25px 50px;
+    @media screen and (max-width: 499px) {
+      padding: 25px;
+    }
+    &.modal{
+      position: relative;
+      @media screen and (max-height: 590px) {
+        height: 300px;
+        overflow: auto;
+      }
+    }
+
+    h3 {
+      margin-bottom: 25px;
+      font-size: 30px;
+      font-weight: 800;
+      color: $blueDark;
+    }
+
+    .form-group {
+      margin: 10px 0;
+
+      input{
+        width: 400px;
+        height: 50px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 5px 12px;
+        font-size: 16px;
+        @media screen and (max-width: 767px) {
+          width: 100%;
+        }
+      }
+
+      span {
+        font-size: 12px;
+        cursor: pointer;
+      }
+
+      a {
+        color: $blueDark;
+      }
+
+      button {
+        width: 400px;
+        height: 50px;
+        margin-top: 5px;
+        padding: 5px 12px;
+        background-color: $bBcolor;
+        color: $blueDark;
+        font-size: 18px;
+        border: 0;
+        border-radius: 0px 16px 0px 16px;
+        &:hover{
+          background-color: $blueDark;
+          color: $bBcolor;
+          border-radius: 16px 0px 16px 0px;
+          cursor: pointer;
+        }
+        @media screen and (max-width: 767px) {
+          width: 100%;
+        }
+      }
+
+      .alert-danger {
+        background-color: #f8d7da;
+        color: #721c24;
+        border-radius: 5px;
+        padding: .75rem 1.25rem;
+        margin: 10px auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,105 @@
+#tomtomsearch {
+  position: relative;
+  width: 50%;
+  margin: 20px auto;
+}
+
+@media screen and (max-width: 800px) {
+  #tomtomsearch {
+    width: 80%;
+  }
+}
+
+#tomtomsearch .form_row_vue {
+  width: 100%;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+}
+
+#tomtomsearch .form_row_vue .input-text-vue,
+#tomtomsearch .form_row_vue .input-text-vue-bis {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  border: none;
+  outline: none;
+}
+
+#tomtomsearch .form_row_vue .label-input-vue {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #000;
+}
+
+#tomtomsearch .form_row_vue .label-input-vue::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #5fa8d3;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+
+#tomtomsearch .form_row_vue .content-label-vue {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+#tomtomsearch .form_row_vue .input-text-vue:focus + .label-input-vue .content-label-vue,
+#tomtomsearch .form_row_vue .input-text-vue:valid + .label-input-vue .content-label-vue {
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: #5fa8d3;
+}
+
+#tomtomsearch .form_row_vue .input-text-vue:focus + .label-input-vue::after,
+#tomtomsearch .form_row_vue .input-text-vue:valid + .label-input-vue {
+  transform: translateX(0%);
+}
+
+#tomtomsearch .form_row_vue #close {
+  color: red;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#tomtomsearch .form_row_vue #close:hover {
+  cursor: pointer;
+}
+
+#tomtomsearch ul {
+  list-style-type: none;
+  position: absolute;
+  top: 55px;
+  left: 0;
+  z-index: 10;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-left: 1px solid #021d3b;
+  border-bottom: 1px solid #021d3b;
+  border-right: 1px solid #021d3b;
+}
+
+#tomtomsearch ul li {
+  padding: 4px;
+  border-radius: 10px;
+  color: #021d3b;
+}
+
+#tomtomsearch ul li:hover {
+  background-color: #ff5a60;
+}
+

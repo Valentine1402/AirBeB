@@ -1,0 +1,212 @@
+.holland{
+  background-image: url(../img/olanda.jpg/);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+
+.show-container {
+  
+  padding: 20px;
+  background-image: linear-gradient($blueDark,#f7bb97);
+
+  h1 {
+  color: $lightPink;
+  font-size: 30px;
+  text-align: center;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1600px;
+    margin: 20px;
+    .image {
+      width: 50%;
+      img {
+      margin-right: 30px;
+      border-radius: 5px;
+      max-width: 100%;
+      }
+    }
+
+    .item {
+      border-radius: 10px;
+      padding: 20px;
+      color: $blueDark;
+      span {
+        color: $blueDark;
+        font-weight: bold;
+      }
+      &.info {
+        h1 {
+          color: $bBcolor;
+        }
+        p {
+          color: $white;
+          margin-top: 20px;
+        }
+      }
+      &.description {
+        width: 50%;
+        h4 {
+          color: $bBcolor;
+        }
+        li,
+        p {
+          color: $white;
+          font-size: 20px;
+        }
+      }
+      &.services {
+        margin-left: auto;
+
+        h1 {
+          color: $bBcolor;
+        }
+      }
+      &.manage-apartment {
+        h1 {
+          color: $blueDark;
+        }
+      }
+
+      
+    }
+    .owner-msg {
+      .msg {
+        .msg-body {
+
+          h2{
+            margin-bottom: 10px;
+            padding: 5px;
+            background-color:$blueDark;
+            color: $white;
+            border-radius: 3px;
+          }
+          .email{
+            height: 33px;
+            width: 150px;
+            border: 0px;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: $blueDark;
+            color: $white;
+          }
+          #message{
+          width: 100%;
+          height: 150px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          padding: 10px;
+          border-radius: 5px;
+          background-color: #f7bc9777;
+          border: 3px solid $blueDark;
+          color: $blueDark;
+          font-weight: bold;
+          font-size: medium;
+        }
+        .send{
+          display: block;
+        }
+        }
+      }
+    }
+  }
+  .btn {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 5px;
+    padding: 15px;
+    background-color: $blueDark;
+    color: $bBcolor;
+    border: 0;
+    border-radius: 0 16px 0 16px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: $bBcolor;
+      color: $blueDark;
+      border-radius: 16px 0 16px 0;
+      cursor: pointer;
+    }
+  }
+  .owner-msg{
+    max-width: 300px;
+  }
+}
+#message{
+  width: 100%;
+  height: 300px;
+  margin-top: 30px;
+}
+.send{
+  display: block;
+}
+
+@media screen and (min-width: 1601px) {
+  .show-container{
+    .row{
+      margin: 20px auto;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1050px) {
+  .show-container{
+    .row{
+      .image{
+        width: 100%;
+        text-align: center;
+      }
+      .item.description{
+        width: 100%;
+      }
+      .item.services,
+      .item.manage-apartment{
+        margin: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .show-container{
+    .row{
+      .item.services{
+        #map{
+          margin-top: 30px 0;
+          max-width: 300px;
+          height: 300px;
+        }
+      }
+      .item.manage-apartment{
+        padding: 20px 0;
+      }
+    }
+  }
+   #message{
+  width: 350px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .show-container{
+    .row{
+      .item.services{
+        #map{
+          margin: 30px auto;
+          max-width: 200px;
+          height: 200px;
+        }
+      }
+    }
+  }
+  #message{
+  width: 80%;
+  }
+}

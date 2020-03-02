@@ -1,0 +1,22 @@
+.error-container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $blueDark;
+  .error{
+    p{
+      text-align: center;
+      color: $bBcolor;
+      font-size: 40px;
+    }
+    img{
+        max-width: 400px;
+      }
+    .code{
+      text-align: center;
+      font-size: 40px;
+      color: $bBcolor;
+    }
+    }
+}

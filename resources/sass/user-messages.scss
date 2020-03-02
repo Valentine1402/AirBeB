@@ -1,0 +1,106 @@
+.home {
+    background-image: url("../img/houston.jpg/");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+.previews_container {
+    padding: 20px;
+    background-color: #cfcbdc;
+    min-height: calc(100vh - 500px);
+
+    h1 {
+        text-align: center;
+    }
+
+    .message-preview {
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        border: 4px solid $lightGrey;
+        border-radius: 20px;
+        padding: 20px;
+        margin: auto;
+        border-radius: 35px 0 35px 0;
+        background-color: $blueDark;
+        color: $lightGrey;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: 999px){
+
+            width: 96%;
+        }
+        &.read {
+            background-color: $grey;
+        }
+
+        .no-messages {
+            text-align: center;
+            margin: 25px 0;
+
+            h1 {
+                margin-bottom: 25px;
+            }
+        }
+
+        .img_card img {
+            max-width: 300px;
+
+            border-radius: 5px;
+
+
+        }
+
+        @media screen and (max-width: 999px){
+
+            .img_card {
+                display: none;
+            }
+
+        }
+
+        .text {
+            width: 75%;
+
+            .message-body {
+                  margin-top: 8px;
+                .content {
+                    background-color: white;
+                    border-radius: 5px;
+                    padding: 24px;
+                    color: black;
+                    font-size: 18px;
+                    border-radius: 35px 0 35px 0
+                }
+            }
+            margin: 15px;
+
+            .header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .set-read {
+                    display: flex;
+                }
+
+                .from {
+                    color: $bBcolor;
+                    font-size: 22px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            a {
+                color: $bBcolor;
+                font-size: 28px;
+            }
+
+            span {
+                color: $grey;
+            }
+        }
+    }
+}

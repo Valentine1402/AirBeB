@@ -1,0 +1,30 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Font-awesome
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+// Variables
+@import 'variables';
+
+// Common
+@import 'common';
+
+//partials
+@import 'partials/head';
+@import 'partials/navbar';
+@import 'partials/main';
+@import 'partials/footer';
+@import 'partials/session-alert';
+@import 'partials/statistics';
+@import 'partials/search';
+@import 'partials/modal';
+@import 'partials/user-info';
+
+@import 'apartment-register';
+@import 'user-apartment';
+@import 'show-apartment';
+@import 'user-messages';
+@import 'error-404';
+
+@import 'partials/user-form';

@@ -1,0 +1,13 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
+    "/css/address-search.css": "/css/address-search.css",
+    "/css/address-tomtom.css": "/css/address-tomtom.css",
+    "/js/avatar.js": "/js/avatar.js",
+    "/js/checker.js": "/js/checker.js",
+    "/js/dropdown.js": "/js/dropdown.js",
+    "/js/modal.js": "/js/modal.js",
+    "/js/sessionAlert.js": "/js/sessionAlert.js",
+    "/js/sponsorship.js": "/js/sponsorship.js",
+    "/js/statistics.js": "/js/statistics.js"
+}

@@ -1,0 +1,103 @@
+.head-img-home{
+    height: calc(100vh - 70px);
+    @media screen and (max-height: 510px) {
+        height: auto;
+    }
+    background-image: url('/img/tower-bridge.jpg');
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+    display: flex;
+    align-items: center;
+    position: relative;
+    .box-home-page{
+        margin-left: 30px;
+        background-color: rgba(211, 211, 211, 0.3);
+        border-radius: 6px;
+        width: 400px;
+        height: 450px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        @media screen and (max-width: 999px) {
+            background-color: $blueDark;
+        }
+        @media screen and (max-width: 767px) {
+            margin: auto;
+        }
+        @media screen and (max-width: 450px) {
+            width: 80%;
+            height: auto;
+        }
+        @media screen and (max-height: 510px) {
+            margin: 20px auto;
+        }
+        h1, p{
+            color:$white;
+            margin: 10px;
+        }
+
+        h1{
+            font-style: bold;
+        }
+        .homeBtn{
+            margin-top: 40px;
+
+            a {
+                background-color:$blueDark;
+                color:$bBcolor;
+                padding: 10px;
+                margin-top: 10px;
+                font-size: 20px;
+                border-radius: 5px;
+                @media screen and (max-width: 999px) {
+                    background-color: $lightPink;
+                    color: $blueDark;
+                }
+            }              
+
+        }
+
+    }
+    
+    #box-arrows{
+        position: absolute;
+        left: 50%;
+        bottom: 8%;
+        transform: translateX(-50%);
+        @media screen and (max-width:900px), screen and (max-height:650px){
+            display: none;
+        }
+        .arrow{
+            display: block;
+            width: 30px;
+            height: 30px;
+            border-right: 4px solid #fff;
+            border-bottom: 4px solid #fff;
+            transform: rotate(45deg);
+            margin: -10px;
+            animation: scroll 2s infinite ease;
+        }
+        .arrow:nth-child(2){
+            animation-delay: -0.2s;
+        }
+
+        .arrow:nth-child(3){
+            animation-delay: -0.4s;
+        }
+    }
+}
+@keyframes scroll{
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}

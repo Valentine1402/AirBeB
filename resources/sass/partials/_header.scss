@@ -1,0 +1,39 @@
+.header-img{
+    position: relative;
+    img{
+        max-width: 100%;
+    }   
+}
+
+.search-bar{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightgray;
+    border-radius: 6px;
+    height: 80px;
+    width: 600px;
+        
+    .my_search{
+       display: flex;
+       justify-content: center;
+       padding-top: 25px;
+       
+
+        select{
+            width: 300px;          
+        }
+
+        button{
+        background-color:$blueDark;
+        color:$bBcolor;
+        margin-left: 20px;
+        border-radius: 5px;
+        width: 150px;
+        height: 30px;
+    }
+    }
+        
+    
+}

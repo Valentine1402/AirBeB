@@ -1,0 +1,110 @@
+.my_nav{
+    position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 20;
+	width: 100%;
+	height: 70px;
+	background-color: $blueDark;
+    padding: 0;
+    border-bottom: solid $bBcolor;
+    .nav_item{
+        width: 100%;
+        height: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+    }
+
+    .navbar-left{
+        img{
+            max-height: 70px;
+        }
+    }
+    .navbar-right{
+
+        > .menu li {
+            display: inline-block;
+            margin-left: 10px;
+            margin-right:10px;
+            font-weight: bold;
+            @media screen and (max-width: 749px) {
+                display: none;
+            }
+            &.user-avatar{
+              position: relative;
+              vertical-align: middle;
+              margin-right: 0;
+              &:hover{
+                cursor: pointer;
+              }
+              img{
+                border-radius: 50%;
+              }
+              .change-avatar{
+                display: none;
+                position: absolute;
+                top: 75px;
+                right: -55px;
+                padding: 15px;
+                background-color: $blueDark;
+                border: 2px solid $bBcolor;
+                &.open{
+                  display: block;
+                }
+              }
+            }
+        }
+
+        a, span{
+            color : $bBcolor;
+            transition: 0.2s;
+            &:hover{
+              color: #fff;
+              cursor: pointer;
+            }
+        }
+
+        .dropdown-menu {
+            margin-right: 20px;
+            @media screen and (min-width: 750px) {
+                display: none;
+            }
+
+            i {
+                color: $bBcolor;
+                font-size: 25px;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .dropdown-content {
+                display: block;
+                background-color: $blueDark;
+                width: 100%;
+                position: absolute;
+                top: 70px;
+                right: 0;
+                text-align: center;
+                transition: display 5s;
+                border-bottom: solid $bBcolor;
+
+
+                @media screen and (max-width: 999px){
+                    font-size: 1.6rem;
+                }
+
+                li {
+                    margin: 50px 0;
+                }
+            }
+
+            .hide {
+                display: none;
+            }
+        }
+    }
+}

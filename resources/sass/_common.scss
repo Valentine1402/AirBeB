@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family-sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+main {
+    margin-top: 70px;
+    min-height: calc(100vh - 500px);
+}
+
+.overflow-y-hidden {
+    overflow-y: hidden;
+}
