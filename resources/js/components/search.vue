@@ -2,7 +2,7 @@
 <div class="my_apt_sponsor">
     <div class="my_form_">
         <tomtomsearch :is-in-edit-mode='true' @coordinates="saveCoordinates" @edit="setEdit"></tomtomsearch>
-        <p>Distanza max dall'indirizzo indicato:</p>
+        <span>Cerca nel raggio di  </span>
         <input class="km" type="text" v-model="radius">
         <label class="km" for="distance">Km </label><br><br>
 

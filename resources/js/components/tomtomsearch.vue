@@ -3,7 +3,7 @@
     <div class="form_row_vue">
         <input class='input-text-vue' v-show="editMode" v-model="address" type="text" autocomplete="off" :required="editMode">
         <label for="address" class="label-input-vue">
-            <span class="content-label-vue">Indirizzo</span>
+            <span class="content-label-vue">Dove vuoi andare?</span>
         </label>
         <input class='input-text-vue-bis' v-show="!editMode" v-model="finaladdress" type="text" name="address" readonly>
         <span id="close" v-show="!editMode" @click="enterEditMode">X</span>

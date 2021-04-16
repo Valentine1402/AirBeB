@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8a33c6db66312c0f001692bdb7455f85",
+    "content-hash": "f57b30e3389e1e6232b8cfa4832dc95f",
     "packages": [
         {
             "name": "braintree/braintree_php",
-            "version": "4.6.0",
+            "version": "4.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/braintree/braintree_php.git",
-                "reference": "4323b0647288d637ca0a8deab99a10bfe1798790"
+                "reference": "044f6e20c3831a7c19dfb6d1730e3e509470a115"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/braintree/braintree_php/zipball/4323b0647288d637ca0a8deab99a10bfe1798790",
-                "reference": "4323b0647288d637ca0a8deab99a10bfe1798790",
+                "url": "https://api.github.com/repos/braintree/braintree_php/zipball/044f6e20c3831a7c19dfb6d1730e3e509470a115",
+                "reference": "044f6e20c3831a7c19dfb6d1730e3e509470a115",
                 "shasum": ""
             },
             "require": {
@@ -51,7 +51,7 @@
                 }
             ],
             "description": "Braintree PHP Client Library",
-            "time": "2020-01-13T18:24:38+00:00"
+            "time": "2020-02-20T19:49:15+00:00"
         },
         {
             "name": "defuse/php-encryption",

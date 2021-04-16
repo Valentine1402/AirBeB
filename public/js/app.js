@@ -38471,7 +38471,7 @@ var render = function() {
           on: { coordinates: _vm.saveCoordinates, edit: _vm.setEdit }
         }),
         _vm._v(" "),
-        _c("p", [_vm._v("Distanza max dall'indirizzo indicato:")]),
+        _c("span", [_vm._v("Cerca nel raggio di  ")]),
         _vm._v(" "),
         _c("input", {
           directives: [
@@ -39213,7 +39213,11 @@ var staticRenderFns = [
     return _c(
       "label",
       { staticClass: "label-input-vue", attrs: { for: "address" } },
-      [_c("span", { staticClass: "content-label-vue" }, [_vm._v("Indirizzo")])]
+      [
+        _c("span", { staticClass: "content-label-vue" }, [
+          _vm._v("Dove vuoi andare?")
+        ])
+      ]
     )
   }
 ]

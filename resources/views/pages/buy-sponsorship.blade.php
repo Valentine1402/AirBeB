@@ -16,7 +16,7 @@
     @method('POST')
 
         <div class="title">
-            <h3>Acquista sponsorizzazione per: {{ $apartment -> title }}</h3>
+            <h3>Acquista sponsorizzazione per :  {{ $apartment -> title }}</h3>
             <h3>Card Payment</h3>
         </div>
 

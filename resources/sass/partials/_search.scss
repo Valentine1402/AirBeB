@@ -21,11 +21,10 @@
 
     .my_form_ {
         background-color: #06264b;
-        border: 8px solid $bBcolor;
         color: $lightGrey;
         width: 600px;
         margin: auto;
-        border-radius: 5px;
+        border-radius: 40px;
         padding: 20px;
         font-display: flex;
         justify-content: center;
@@ -209,11 +208,7 @@
                 }
 
                 &:hover {
-                    // filter: brightness(120%);
-                    // border-radius: 30px;
                     transform: scale(1.03);
-                    // border: 5px solid $darkPink;
-                    // margin: 25px;
                 }
             }
         }

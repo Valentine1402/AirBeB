@@ -48,7 +48,7 @@
   width: 100%;
   height: 100%;
   pointer-events: none;
-  border-bottom: 1px solid #c77485;
+  border-bottom: 3px solid #fc466b;
 }
 
 #tomtomsearch .form_row_vue .label-input-vue::after {
@@ -58,7 +58,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  border-bottom: 3px solid #c77485;
+  border-bottom: 1px solid #fc466b;
   transform: translateX(-100%);
   transition: all 0.3s ease;
 }
@@ -75,7 +75,7 @@
   transform: translateY(-110%);
   font-size: 15px;
   font-weight: bold;
-  color: #fc466b;
+  color: white;
 }
 
 #tomtomsearch .form_row_vue .input-text-vue:focus + .label-input-vue::after,
